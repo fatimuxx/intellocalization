@@ -94,6 +94,46 @@ section > div:hover p {
         opacity: 1;
 }
 
+/* Styling for the newsletter subscription form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #dee2e6; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #495057; /* Darker text for labels */
+}
+
+form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+form .form-control:focus {
+    border-color: #6f9b67; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(111, 155, 103, 0.5);
+}
+
+form .btn {
+    background-color: #6f9b67;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #5a7d53; /* Darker green on hover */
+    color: #fff;
+}
+
 /* Mobile device media query */
 @media (max-width: 600px) {
     header {
@@ -111,4 +151,43 @@ section > div:hover p {
     p {
         font-size: 1rem;
     }
+}
+
+/* Enable right-to-left text flow for Arabic language */
+html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #6c757d; /* Muted text color */
+    border-top: 1px solid #dee2e6; /* Subtle border on top */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #0056b3; /* Darker shade on hover */
 }
