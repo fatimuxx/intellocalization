@@ -159,11 +159,18 @@ html[lang="ar"] body {
     text-align: right;
 }
 
+/* Support for left-to-right languages */
+html:not([lang="ar"]) body {
+    direction: ltr;
+    text-align: left;
+}
+
 /* Footer styling */
 footer {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #e7efe4; /* Light green background */
     color: #6c757d; /* Muted text color */
-    border-top: 1px solid #dee2e6; /* Subtle border on top */
+    border-top: 1px solid #c7dbc3; /* Subtle border on top */
+    text-align: center; /* Center align text */
 }
 
 footer p {
@@ -175,6 +182,7 @@ footer ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: inline-block; /* Center the list */
 }
 
 footer ul li {
